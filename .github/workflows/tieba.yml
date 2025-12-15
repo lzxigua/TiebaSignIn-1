@@ -38,7 +38,7 @@ jobs:
       actions: write  # 必须授予权限才能使用 API 模式
     steps:
       - uses: actions/checkout@v4
-      - uses: futuretech6/keepalive-workflow@v2
+      - uses: futuretech6/keepalive-workflow@master
         with:
           use_api: true  # 默认使用 GitHub API 模式（推荐，不会产生虚假提交）
           time_elapsed: 45  # 如果最近 45 天内没有活动，才触发保活
